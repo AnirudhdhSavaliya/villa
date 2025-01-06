@@ -21,18 +21,18 @@ a {
     font-size: 24px;
 }
 
-.navbar-nav .nav-link {
-    color: black;
+.navbar-light .navbar-nav .nav-link {
+    color: black !important;
     font-weight: 500;
     margin-right: 15px;
 }
 
 .navbar-nav .nav-link.active {
-    color: #f35525;
+    color: #f35525 !important;
 }
 
 .navbar-nav .nav-link:hover {
-    color: #f35525;
+    color: #f35525 !important;
 }
 
 .schedule-btn {
@@ -47,7 +47,7 @@ a {
 
 ul.navbar-nav.ms-auto li:last-child a {
     background-color: #1e1e1e;
-    color: #fff;
+    color: #fff !important;
     font-size: 14px;
     font-weight: 400;
     text-transform: none;
@@ -70,8 +70,17 @@ ul.navbar-nav.ms-auto li:last-child a>i {
     margin-left: -1px;
 }
 
+ul.navbar-nav.ms-auto li:last-child a:hover {
+    color: #1e1e1e !important;
+}
+
+
 ul.navbar-nav.ms-auto li:last-child a>span {
     padding: 0 8px 0 8px;
+}
+
+ul.navbar-nav.ms-auto li:last-child a:hover span {
+    color: #f35525 !important;
 }
 
 .contact-info {
@@ -651,7 +660,8 @@ button:active {
     text-transform: uppercase;
     font-weight: 700;
 }
-li.nav-item>a {
+
+.row.pt-5>.col-lg-5>ul#myTab>li.nav-item>a {
     font-size: 16px;
     font-weight: 500;
     background-color: #1e1e1e !important;
@@ -662,16 +672,18 @@ li.nav-item>a {
     padding: 0px 25px;
     color: #fff;
 }
-li.nav-item>a:hover{
-color: #f35525;
+
+.row.pt-5>.col-lg-5>ul#myTab>li.nav-item>a:hover {
+    color: #f35525;
 }
 
-li.nav-item>a.active {
+.row.pt-5>.col-lg-5>ul#myTab>li.nav-item>a.active {
     background-color: #f35525 !important;
     color: #fff !important;
-}   
+}
+
 .nav-tabs {
-    border:none;
+    border: none;
     gap: 9px;
 }
 
@@ -687,7 +699,7 @@ li.nav-item>a.active {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 10px;
     padding: 30px 30px;
-        }
+}
 
 .row>.col-sm-12.col-lg-3>.info-table ul li {
     display: block;
@@ -707,7 +719,8 @@ li.nav-item>a.active {
     float: right;
     display: inline-block;
 }
-.icon-button> a {
+
+.icon-button>a {
     background-color: #1e1e1e;
     color: #fff;
     font-size: 14px;
@@ -716,12 +729,13 @@ li.nav-item>a.active {
     border-radius: 20px;
     padding-left: 0px;
     height: 40px;
-    width: 175  px;
+    width: 175 px;
     display: flex;
     align-items: center;
     text-align: center;
-}   
-.icon-button> a>i {
+}
+
+.icon-button>a>i {
     background-color: #f35525;
     display: inline-block;
     width: 40px;
@@ -731,16 +745,107 @@ li.nav-item>a.active {
     border-radius: 50%;
     margin-left: -1px;
 }
-.icon-button> a >span{
+
+.icon-button>a>span {
     padding-left: 10px;
 }
+
 .row>.col-lg-3 h4 {
     font-size: 17px;
     font-weight: 600;
     margin-bottom: 30px;
 }
-.row>.col-lg-3> p {
+
+.row>.col-lg-3>p {
     font-size: 14px;
     line-height: 28px;
     color: #4a4a4a;
+}
+
+/* properties section    */
+.properties-section>.container>.row>.col-lg-4>.card {
+    background-color: #fafafa;
+    border-radius: 10px;
+    padding: 30px;
+    border: none;
+    margin-bottom: 30px;
+}
+
+.properties-section>.container>.row>.col-lg-4>.card>a>img {
+    border-radius: 10px;
+}
+
+.properties-section>.container>.row>.col-lg-4>.properties-section-section-heading.text-center {
+    width: 400px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.properties-section>.container>.row>.col-lg-4>.card>.card-detail.d-flex.align-items-baseline.justify-content-between>h6 {
+    color: #ee626b;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.properties-section>.container>.row>.col-lg-4>.card>.card-detail.d-flex.align-items-baseline.justify-content-between>h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #1e1e1e;
+    text-transform: capitalize;
+    margin-top: 20px;
+    line-height: 56px;
+}
+
+.properties-section>.container>.row>.col-lg-4>.card>.card-detail>span.category {
+    background-color: #fbd9cf;
+    font-weight: 500;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #1e1e1e;
+    padding: 5px 12px;
+    display: inline-block;
+    margin-top: 25px;
+}
+
+.properties-section>.container>.row>.col-lg-4>.card>h4 {
+    font-size: 19px;
+    margin: 25px 0px;
+}
+
+.properties-section>.container>.row>.col-lg-4>.card>h4 a {
+    color: #1e1e1e;
+}
+
+.properties-section>.container>.row>.col-lg-4>.card>ul {
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.properties-section>.container>.row>.col-lg-4>.card>ul li span {
+    font-weight: 600;
+    color: #1e1e1e;
+}
+
+.properties-section>.container>.row>.col-lg-4>.card>ul>li {
+    display: inline-block;
+    font-size: 15px;
+    color: #4a4a4a;
+    margin-right: 20px;
+}
+.properties-section>.container>.row>.col-lg-4>.card>.main-button {
+    text-align: center;
+}
+.properties-section>.container>.row>.col-lg-4>.card>.main-button a {
+    display: inline-block;
+    background-color: #1e1e1e;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 30px;
+    border-radius: 25px;
+    transition: all .3s;
 }
