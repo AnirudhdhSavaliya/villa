@@ -760,6 +760,10 @@ div#myTabContent {
     .icon-button>a {
         margin: 0 auto;
     }
+    .dual-sections>.row>.col-lg-3{
+        order: 2;
+    }
+    
 }
 
 .info-table {
