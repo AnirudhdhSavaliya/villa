@@ -12,7 +12,8 @@
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 
 <div>
@@ -20,9 +21,9 @@
     <div class="container py-2">
       <div class="d-flex flex-column flex-md-row justify-content-between align-items-center ">
         <div class="contact-info d-flex align-items-center flex-column flex-md-row gap-3">
-          <span><i class="fa-solid fa-envelope"></i> info@company.com</span>
+          <span><a href=""><i class="fa-solid fa-envelope"></i> info@company.com</a> </span>
           <span class="divider d-none d-md-block"></span>
-          <span><i class="fa-solid fa-map"></i> Sunny Isles Beach, FL 33160</span>
+          <span><a href=""><i class="fa-solid fa-map"></i> Sunny Isles Beach, FL 33160</a> </span>
         </div>
         <div class="social-icons mt-2 mt-md-0 gap-3 d-flex">
           <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -246,18 +247,13 @@
           <div class="row justify-content-center">
             <div class="video-frame ">
               <img src="assets/img/video-frame.jpg" alt="">
-              <div class="btn">
-                <div class="wrapper">
-
-
-
-                  <div class="player circle">
-                    <div class="buffering circle animated"></div>
-                    <a class="triangle"></a>
-                  </div>
-
-
-
+              <div class="button-area">
+                <div class="buttonb-inner">
+                  <a id="play-video" onclick="openVideo()" class="video-play-button"
+                    href="https://www.youtube.com/embed/NnewIthuokI?feature=oembed" data-toggle="modal"
+                    data-target="#savoybeachhotel">
+                    <span></span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -266,27 +262,62 @@
       </div>
     </div>
   </div>
+  <div class="video-popup" id="videoPopup">
+    <div class="video-container">
+      <iframe id="youtubeVideo" src="https://www.youtube.com/embed/NnewIthuokI?feature=oembed" frameborder="0"
+        allow="autoplay; encrypted-media" allowfullscreen>
+      </iframe>
+      <button class="close-button" onclick="closeVideo()">✖</button>
+    </div>
+  </div>
+  <script>
+    function openVideo() {
+      const youtubeVideo = document.getElementById('youtubeVideo');
+      document.getElementById('videoPopup').style.display = 'flex';
+
+      // Ensure autoplay works
+      const currentSrc = youtubeVideo.src;
+      if (!currentSrc.includes("autoplay=1")) {
+        youtubeVideo.src = currentSrc + "&autoplay=1";
+      }
+    }
+
+    function closeVideo() {
+      const youtubeVideo = document.getElementById('youtubeVideo');
+      document.getElementById('videoPopup').style.display = 'none';
+
+      // Remove autoplay when closing the video
+      youtubeVideo.src = youtubeVideo.src.replace("&autoplay=1", "");
+    }
+
+  </script>
+
+
+
   <!-- fact-section -->
   <div class="fact-section pt-5 pb-5">
     <div class="container">
       <div class="fact-section-inner">
         <div class="row justify-content-center">
-          <div class="col-sm-12 col-md-4 col-lg-4 pt-3 pb-4">
+          <div class="col-sm-12 col-md-4 col-lg-4 pt-3 pb-4" data-aos="zoom-in-up" data-aos-delay="300"
+            data-aos-duration="1000" data-aos-offset="200">
             <div class="counter">
-              <h2 class="timer count-title count-number" data-to="34" data-speed="1000">34</h2>
+              <h2 class="timer count-title count-number" data-to="34" data-speed="9000">34</h2>
               <p class="count-text ">Buildings<br>Finished Now</p>
             </div>
           </div>
-          <div class="col-sm-12 col-md-4 col-lg-4 pt-3 pb-4">
+          <div class="col-sm-12 col-md-4 col-lg-4 pt-3 pb-4" data-aos="zoom-in-up" data-aos-delay="300"
+            data-aos-duration="1000" data-aos-offset="200">
             <div class="counter">
-              <h2 class="timer count-title count-number" data-to="34" data-speed="1000">34</h2>
-              <p class="count-text ">Buildings<br>Finished Now</p>
+              <h2 class="timer count-title count-number" data-to="34" data-speed="1000">12</h2>
+              <p class="count-text ">Years<br>Experience</p>
             </div>
           </div>
-          <div class="col-sm-12 col-md-4 col-lg-4 pt-3 pb-4">
+          <div class="col-sm-12 col-md-4 col-lg-4 pt-3 pb-4" data-aos="zoom-in-up" data-aos-delay="300"
+            data-aos-duration="1000" data-aos-offset="200">
             <div class="counter">
-              <h2 class="timer count-title count-number" data-to="34" data-speed="1000">34</h2>
-              <p class="count-text ">Buildings<br>Finished Now</p>
+              <h2 class="timer count-title count-number" data-to="34" data-speed="1000">24</h2>
+              <p class="count-text ">Awward<br>Won 202</p>
             </div>
           </div>
         </div>
@@ -305,15 +336,18 @@
         </div>
         <div class="col-lg-5">
           <ul class="nav nav-tabs text-center " id="myTab" role="tablist">
-            <li class="nav-item">
+            <li class="nav-item " data-aos="zoom-in-up" data-aos-delay="300" data-aos-duration="1000"
+              data-aos-offset="200">
               <a class="nav-link active" id="all-tab" data-toggle="tab" href="#all" role="tab" aria-controls="all"
                 aria-selected="true">Appartment</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item " data-aos="zoom-in-up" data-aos-delay="300" data-aos-duration="1000"
+              data-aos-offset="200">
               <a class="nav-link" id="factory-tab" data-toggle="tab" href="#factory" role="tab" aria-controls="factory"
                 aria-selected="false">Villa House</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item " data-aos="zoom-in-up" data-aos-delay="300" data-aos-duration="1000"
+              data-aos-offset="200">
               <a class="nav-link" id="industry-tab" data-toggle="tab" href="#industry" role="tab"
                 aria-controls="industry" aria-selected="false">Penthouse</a>
             </li>
@@ -369,7 +403,8 @@
             </div>
             <div class="col-lg-3">
               <h4>Extra Info About Property</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut labore et
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut labore
+                et
                 dolore magna aliqua quised ipsum suspendisse.
                 <br><br>When you need free CSS templates, you can simply type TemplateMo in any search engine website.
                 In
@@ -611,6 +646,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+<!-- aos -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init(); // AOS initialize karein
+</script>
 </body>
 
 </html>

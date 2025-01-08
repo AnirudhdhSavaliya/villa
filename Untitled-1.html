@@ -1,0 +1,179 @@
+<!-- 
+Online HTML, CSS and JavaScript editor to run code online.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Browser</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="player">
+          <div class="buffering"></div>
+          <a class="triangle" id="videoPlayer" href="javascript:void(0)"></a>
+        </div>
+      
+        <!-- Video Modal -->
+        <div id="videoModal" class="modal" style="display: none;">
+          <div class="modal-overlay"></div>
+          <div class="modal-content">
+            <iframe 
+              id="youtubeIframe" 
+              width="1200" 
+              height="675" 
+              src="" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+            <button id="closeButton" class="close-button">&times;</button>
+          </div>
+        </div>
+      </div>
+      
+      <style>
+      /* Wrapper */
+      .wrapper {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+      }
+      
+      /* Player Button */
+      .player {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 145px;
+        width: 146px;
+        background-color: #F2F0F0;
+        cursor: pointer;
+        border-radius: 50%;
+      }
+      
+      .triangle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        margin: -15px 0 0 -10px;
+        border-top: 20px solid transparent;
+        border-left: 30px solid #ee626b;
+        border-bottom: 20px solid transparent;
+        transition: all 0.3s ease;
+      }
+      
+      .player:hover .triangle {
+        border-left: 30px solid #46CCBF;
+      }
+      
+      .buffering {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 137px;
+        height: 137px;
+        border-right: 3px dashed #ee626b;
+        border-bottom: 3px dashed #ee626b;
+        border-left: 3px dashed #ee626b;
+        border-top: 3px dashed #ee626b;
+        animation: rotate 3s infinite linear;
+        border-radius: 50%;
+      }
+      
+      /* Modal Overlay */
+      .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+        z-index: 10;
+      }
+      
+      /* Modal Content */
+      .modal-content {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        z-index: 20;
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        max-width: 90%;
+        max-height: 90%;
+      }
+      
+      .modal-content iframe {
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+      }
+      
+      /* Close Button */
+      .close-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: #ff5c5c;
+        color: #fff;
+        border: none;
+        font-size: 20px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      
+      .close-button:hover {
+        background: #ff3b3b;
+      }
+      
+      /* Keyframes for buffering */
+      @keyframes rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      </style>
+      
+      <script>
+        // Show the video modal
+        document.getElementById("videoPlayer").addEventListener("click", function () {
+          const videoModal = document.getElementById("videoModal");
+          const youtubeIframe = document.getElementById("youtubeIframe");
+      
+          const youtubeVideoUrl = "https://www.youtube.com/embed/xtJg_o0oxz4";
+      
+          youtubeIframe.src = youtubeVideoUrl + "?autoplay=1"; 
+          videoModal.style.display = "block"; 
+        });
+      
+        // Close the video modal
+        document.getElementById("closeButton").addEventListener("click", function () {
+          const videoModal = document.getElementById("videoModal");
+          const youtubeIframe = document.getElementById("youtubeIframe");
+      
+          youtubeIframe.src = ""; 
+          videoModal.style.display = "none"; 
+        });
+      </script>
+      </body>
+
+</html>
