@@ -271,10 +271,13 @@ ul.navbar-nav.ms-auto li:last-child a:hover span {
 .main-outer {
     padding: 0 34px !important;
 }
-@media(max-width:480px){
-    .header-text .text-center{
-  
+@media (max-width:760px){
+    header>.container.py-2>.d-flex.flex-column.flex-md-row.justify-content-between.align-items-center{
+        display: none !important;
     }
+}
+@media(max-width:480px){
+ 
     .header-text h2 {
         font-size: 20px;
         padding-left: 72px;
