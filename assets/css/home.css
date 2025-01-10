@@ -1000,6 +1000,7 @@ div#myTabContent {
 
 .properties-section>.container>.row>.col-lg-4.col-md-6>.card>h4 a {
     color: #1e1e1e;
+    text-decoration: none;
 }
 
 .properties-section>.container>.row>.col-lg-4.col-md-6>.card>ul {
