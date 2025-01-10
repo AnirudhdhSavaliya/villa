@@ -1,0 +1,66 @@
+/* hero-section */
+.hero-section {
+    background-image: url(../img/PROPERTY/page-heading-bg.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 110px 0px;
+    text-align: center;
+}
+
+.hero-section>.container>.hero-section-inner>.hero-section-name>h3 {
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.hero-section>.container>.hero-section-inner>.hero-section-name>nav>ol.breadcrumbS {
+    background-color: #fff;
+    color: #1e1e1e;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.hero-section>.container>.hero-section-inner>.hero-section-name>nav {
+    display: inline-block !important;
+}
+
+.hero-section>.container>.hero-section-inner>.hero-section-name>nav>ol.breadcrumbS {
+    DISPLAY: flex;
+    JUSTIFY-CONTENT: center;
+}
+
+.hero-section>.container>.hero-section-inner>.hero-section-name>nav>ol.breadcrumbS>LI>A {
+    text-decoration: none;
+}
+
+/* hero-section */
+
+/*  */
+.properties-filter>.container.mt-5>.row>ul#myTab {
+    justify-content: center;
+}
+
+.properties-filter>.container.mt-5>.row>ul#myTab>li.nav-item>a {
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: #fff;
+    background-color: #1e1e1e;
+    padding: 12px 25px;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+.properties-filter>.container.mt-5>.row>ul#myTab>li.nav-item>a.active{
+    background-color: #f35525;
+}
+
+/*  */

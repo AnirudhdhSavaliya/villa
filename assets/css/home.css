@@ -1,7 +1,7 @@
 *,
 ul,
 li,
-a {
+a{
     margin: 0;
     padding: 0;
     list-style: none;
@@ -43,7 +43,10 @@ a {
 .navbar-light .navbar-nav .nav-link:hover::after {
     transform: scaleX(1);
 }
-
+ul.navbar-nav.ms-auto li:last-child:hover ::after{
+    transform: scale(0);
+    }
+    
 .navbar-nav .nav-link.active {
     color: #f35525 !important;
 }
@@ -172,11 +175,62 @@ ul.navbar-nav.ms-auto li:last-child a:hover span {
 
 }
 
+
 .social-icons.mt-2.mt-md-0.gap-3.d-flex>a:hover {
     background-color: #f35525;
 }
 
 /* banner section */
+.hero-section {
+    position: relative;
+  }
+  
+  .carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 37% !important;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  @media(max-width:480px){
+    .header-text .text-center{
+  
+    }
+    .header-text h2 {
+        font-size: 14px;
+    }
+  }
+  .header-text .category {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .header-text .category {
+    background-color: #fff;
+    color: #1e1e1e;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 6px 15px;
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-right: 146px;
+}
+.header-text .category>em {
+    font-style: normal;
+    color: #f35525;
+}
+  
+  .header-text h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 1rem;
+    line-height: 1.4;
+    width: 295px;
+    text-align: left;
+}
+  
 .carousel-indicators [data-bs-target] {
     box-sizing: content-box;
     flex: 0 1 auto;
@@ -217,7 +271,26 @@ ul.navbar-nav.ms-auto li:last-child a:hover span {
 .main-outer {
     padding: 0 34px !important;
 }
-
+@media(max-width:480px){
+    .header-text .text-center{
+  
+    }
+    .header-text h2 {
+        font-size: 20px;
+        padding-left: 72px;
+    }
+    .header-text .category {
+        background-color: #fff;
+        color: #1e1e1e;
+        font-size: 11px;
+        font-weight: 500;
+        text-transform: capitalize;
+        padding: 6px 15px;
+        display: inline-block;
+        margin-bottom: 30px;
+        margin-right: 38px;
+    }
+  }
 /*  */
 .feature-section-3>.shadow-lg {
     border-radius: 10px;
@@ -893,7 +966,9 @@ div#myTabContent {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
+    animation: hover 0.5s infinite;
 }
+
 
 .properties-section>.container>.properties-section-section-heading.text-center>h2 {
     font-size: 40px;
