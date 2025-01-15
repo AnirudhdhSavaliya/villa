@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-Us</title>
+    <link rel="stylesheet" href="assets/css/contact-us.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- font-awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <!-- font-awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/home.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+
+<body>
+    <!-- header -->
+    <div class="sub-header">
+        <div class="container py-2">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center ">
+                <div class="contact-info d-flex align-items-center flex-column flex-md-row gap-3">
+                    <span><a href=""><i class="fa-solid fa-envelope"></i> info@company.com</a> </span>
+                    <span class="divider d-none d-md-block"></span>
+                    <span><a href=""><i class="fa-solid fa-map"></i> Sunny Isles Beach, FL 33160</a> </span>
+                </div>
+                <div class="social-icons mt-2 mt-md-0 gap-3 d-flex">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+
+        <div class="devider border-bottom"></div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">VILLA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-center ">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="properties.html">Properties</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="PropertyDetail.html">Property Details</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-calendar"></i><span> Schedule a
+                                    visit</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Offcanvas menu -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link active text-start" aria-current="page" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  text-start" aria-current="page" href="properties.html">Properties</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle text-start" href="PropertyDetail.html" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Property Details</a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item " href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-start" href="contact-us.html" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Contact Us
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+    <!-- header -->
+    <!-- HERO SECTION START -->
+    <div class="hero-section">
+        <div class="container">
+            <div class="hero-section-inner">
+                <div class="hero-section-name">
+
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumbS">
+                            <li class="breadcrumb-item "><a href="home.html" class="text-dark">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page"> Contact Us</li>
+                        </ol>
+                    </nav>
+
+
+                    <h3>
+                        Contact Us
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- hero section end -->
+    <section class="contact-section py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Left Section -->
+                <div class="col-lg-6">
+                    <div class="section-heading ">
+                        <h6>| Contact Us</h6>
+                        <h2>Get In Touch With Our Agents</h2>
+                    </div>
+                    <p class="pt-3 pb-3">When you really need to download free CSS templates, please remember our
+                        website TemplateMo.
+                        Also, tell your friends about our website. Thank you for visiting. There is a variety of
+                        Bootstrap HTML CSS templates on our website. If you need more information, please contact us.
+                    </p>
+                    <div class="row pt-4">
+                        <div class="col-lg-12 mb-4">
+                            <div class="item phone">
+                                <a href="tel:010-020-0340">
+                                    <img src="assets/img/phone-icon.png" alt="" style="max-width: 52px;">
+                                    <h6>010-020-0340<br><span>Phone Number</span></h6>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-12 ">
+                            <div class="item email">
+                                <a href="mailto:info@villa.com"><img src="assets/img/email-icon.png" alt=""
+                                        style="max-width: 52px;">
+                                    <h6>info@villa.co<br><span>Business Email</span></h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Right Section -->
+                <div class="col-lg-6">
+                    <form class="bg-white shadow p-4 rounded">
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="text" id="fullName" class="form-control" placeholder="Your Name...">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" class="form-control" placeholder="Your E-mail...">
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" class="form-control" placeholder="Subject...">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" class="form-control" rows="4"
+                                placeholder="Your Message..."></textarea>
+                        </div>
+                        <button type="submit" id="form-submit" class="orange-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- map -->
+    <div class="map-outer">
+        <div class="container">
+            <div class="map-inner">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d56652.199640928826!2d-80.118781!3d25.952478!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9add4b4ac788f%3A0xe77469d09480fcdb!2sSunny%20Isles%20Beach!5e1!3m2!1sen!2sth!4v1736957847500!5m2!1sen!2sth"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- map -->
+
+    <!-- fotter -->
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                <p class="text-center">Copyright © 2048 Villa Agency Co., Ltd. All rights reserved.
+
+                    Design: <a rel="nofollow" href="https://templatemo.com" target="_blank">TemplateMo</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- fotter nend -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- tab-buton -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- tab-buton -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+    <!-- aos -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init(); // AOS initialize karein
+    </script>
+
+</body>
+
+</html>

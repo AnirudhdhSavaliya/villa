@@ -23,7 +23,7 @@
 
 <body>
     <!-- navbar start -->
-    <header>
+    <div class="sub-header">
         <div class="container py-2">
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-center ">
                 <div class="contact-info d-flex align-items-center flex-column flex-md-row gap-3">
@@ -39,36 +39,39 @@
                 </div>
             </div>
         </div>
-        <div class="devider border-bottom">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container">
-                    <a class="navbar-brand" href="#">VILLA</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarNav">
-                        <ul class="navbar-nav ms-auto align-items-center ">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="home.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="properties.html">Properties</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Property Details</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Contact Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#"><i class="fa fa-calendar"></i><span> Schedule a
-                                        visit</span></a>
-                            </li>
-                        </ul>
-                    </div>
+    </div>
+    <header>
+
+        <div class="devider border-bottom"></div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">VILLA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-none d-lg-flex" id="navbarNav">
+                    <ul class="navbar-nav ms-auto align-items-center ">
+                        <li class="nav-item">
+                            <a class="nav-link " href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="properties.html">Properties</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="PropertyDetail.html">Property Details</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fa fa-calendar"></i><span> Schedule a
+                                    visit</span></a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
+
+        </nav>
     </header>
 
     <!-- Offcanvas menu -->
@@ -97,8 +100,8 @@
                     <a class="nav-link  text-start" aria-current="page" href="properties.html">Properties</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link dropdown-toggle text-start" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">Property Details</a>
+                    <a class="nav-link dropdown-toggle text-start" href="PropertyDetail.html" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Property Details</a>
                     <ul class="dropdown-menu dropdown-menu-dark">
                         <li><a class="dropdown-item" href="#">Action</a></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -109,7 +112,7 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-start" href="#" role="button" data-bs-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle text-start" href="contact-us.html" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Contact Us
                     </a>
@@ -123,7 +126,7 @@
                     </ul>
                 </li>
             </ul>
-           
+
             <div class="social-icons mt-2 mt-md-0 gap-3 d-flex">
                 <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
