@@ -70,6 +70,7 @@ textarea#message {
     padding: 25px 35px;
     background-color: #fff;
 }
+
 .col-lg-6>form.bg-white.shadow.p-4.rounded>button {
     background-color: #000000;
     color: white;
@@ -91,6 +92,10 @@ textarea#message {
     width: 52px;
     margin-right: 25px;
     vertical-align: middle;
+
+}
+
+.row.pt-4>.col-lg-12>.item.phone>a>img {
     animation: tada 1.5s ease infinite;
 }
 
@@ -108,10 +113,11 @@ textarea#message {
     color: #aaaaaa;
     font-weight: 400;
 }
+
 /* map */
 .map-inner>iframe {
-    
-        border-radius: 20px;
-    }
+
+    border-radius: 20px;
+}
 
 /* map */
