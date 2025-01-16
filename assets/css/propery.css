@@ -53,7 +53,21 @@ header{
 .hero-section>.container>.hero-section-inner>.hero-section-name>nav>ol.breadcrumbS>LI>A {
     text-decoration: none;
 }
-
+.breadcrumb-item>a{
+    color: #343a40 !important;
+}
+.breadcrumb-item.active {
+    color: #6c757d !important;
+}
+.breadcrumb-item+.breadcrumb-item{
+    padding-left: .5rem !important;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: .5rem !important;
+    color: #6c757d;
+    content: "/";
+}
 /* hero-section */
 
 /*  */
