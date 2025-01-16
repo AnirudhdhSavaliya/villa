@@ -124,6 +124,12 @@ ul.navbar-nav.ms-auto li:last-child a:hover span {
         font-size: 12px;
         text-align: center;
     }
+    .sub-header {
+        display: none;
+    }
+    nav.navbar.navbar-expand-lg.navbar-light {
+        padding: 8px 16px;
+    }
 
     .social-icons {
         text-align: center;
