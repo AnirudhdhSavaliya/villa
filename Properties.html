@@ -83,64 +83,39 @@
     <!-- Offcanvas menu -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-            <div class="logo text-center">
-                <h4>VILLA</h4>
+          <ul class="navbar-nav flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active text-start" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  text-start" aria-current="page" href="properties.html">Properties</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link  text-start" aria-current="page" href="PropertyDetail.html" role="button"
+                aria-expanded="false">Property Details</a>
+    
+            <li class="nav-item dropdown">
+              <a class="nav-link  text-start" aria-current="page" href="contact-us.html" role="button"
+                aria-expanded="false">
+                Contact Us
+              </a>
+    
+            </li>
+          </ul>
+          <form class="search-form" role="search">
+            <div class="input-group">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="input-group-text" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
             </div>
-            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center ">
-                <div class="contact-info d-flex align-items-center flex-column flex-md-row gap-3">
-                    <span><a href=""><i class="fa-solid fa-envelope"></i> info@company.com</a> </span>
-                    <span class="divider d-none d-md-block"></span>
-                    <span><a href=""><i class="fa-solid fa-map"></i> Sunny Isles Beach, FL 33160</a> </span>
-                </div>
-
-            </div>
-            <ul class="navbar-nav flex-grow-1 pe-3">
-                <li class="nav-item">
-                    <a class="nav-link active text-start" aria-current="page" href="home.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link  text-start" aria-current="page" href="properties.html">Properties</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link dropdown-toggle text-start" href="PropertyDetail.html" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">Property Details</a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item " href="#">Something else here</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle text-start" href="contact-us.html" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Contact Us
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                        <li><a class="dropdown-item" href="properties.html">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
-            </ul>
-
-            <div class="social-icons mt-2 mt-md-0 gap-3 d-flex">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            </div>
+          </form>
         </div>
-    </div>
+      </div>
 
     <!-- Carousel wrapper -->
     <!-- navbar end -->
