@@ -34,6 +34,8 @@
     --text-white-color: #f1f1f1;
     --button-pink-light-bg:#fbd9cf;
     --property-item-color:#f35525;
+    --light-bg-color:#ffeee9;
+    --light-gray-input:#f3f3f3;
 }
 
 *,
@@ -866,7 +868,7 @@ iframe {
 /*  */
 
 .fact-section>.container>.fact-section-inner>.row>.col-sm-12.col-md-4.col-lg-4>.counter {
-    background-color: var(--bgwhite);
+    background-color: var(--light-bg-color);
     position: relative;
     border-radius: 10px;
     width: 270px;
@@ -914,6 +916,7 @@ iframe {
 .fact-section>.container>.fact-section-inner>.row>.col-sm-12.col-md-4.col-lg-4>.counter h2 {
     margin-right: 25px;
     font-size: 40px;
+    font-weight: 700;
     color: var(--orangetext);
 }
 
@@ -1402,7 +1405,7 @@ div#myTabContent {
     padding: 0.75rem;
     border: none;
     border-radius: 40px;
-    background-color: var(--bgwhite);
+    background-color: var(--light-gray-input);
     font-size: 16px;
     box-sizing: border-box;
 }
