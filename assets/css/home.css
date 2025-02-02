@@ -32,10 +32,10 @@
     --whatsapp-color: #25D366;
     --whatsapp-hover-color: #128C7E;
     --text-white-color: #f1f1f1;
-    --button-pink-light-bg:#fbd9cf;
-    --property-item-color:#f35525;
-    --light-bg-color:#ffeee9;
-    --light-gray-input:#f3f3f3;
+    --button-pink-light-bg: #fbd9cf;
+    --property-item-color: #f35525;
+    --light-bg-color: #ffeee9;
+    --light-gray-input: #f3f3f3;
 }
 
 *,
@@ -229,6 +229,7 @@ ul.navbar-nav.ms-auto li:last-child a:hover span {
 .social-icons.mt-2.mt-md-0.gap-3.d-flex>a:hover {
     background-color: var(--orangebg-hover);
 }
+
 /* search icon off canvas */
 .search-form {
     background-color: var(--bgwhite);
@@ -240,40 +241,40 @@ ul.navbar-nav.ms-auto li:last-child a:hover span {
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
-  }
+}
 
-  .search-form .form-control {
+.search-form .form-control {
     border: 2px solid var(--orangebg);
     border-radius: 50px;
     padding: 12px 20px;
     font-size: 16px;
     transition: border-color 0.3s ease;
     position: relative;
-  }
+}
 
-  .search-form .form-control:focus {
+.search-form .form-control:focus {
     border-color: var(--orangetext);
-    
-  }
 
-  /* Placeholder text movement */
-  .search-form .form-control::placeholder {
+}
+
+/* Placeholder text movement */
+.search-form .form-control::placeholder {
     color: var(--orangebg);
     transition: transform 0.5s ease, opacity 0.5s ease;
-  }
+}
 
-  .search-form .form-control:focus::placeholder {
+.search-form .form-control:focus::placeholder {
     transform: translateX(100%);
     opacity: 0;
-  }
+}
 
-  /* Icon inside the input field */
-  .search-form .input-group {
+/* Icon inside the input field */
+.search-form .input-group {
     display: flex;
     width: 100%;
-  }
+}
 
-  .search-form .input-group-text {
+.search-form .input-group-text {
     background-color: var(--orangebg);
     border: none;
     padding: 10px;
@@ -282,24 +283,26 @@ ul.navbar-nav.ms-auto li:last-child a:hover span {
     cursor: pointer;
     transition: background-color 0.3s ease;
     border-radius: 50px;
-  }
+}
 
-  .search-form .input-group-text:hover {
+.search-form .input-group-text:hover {
     background-color: var(--orangebg-hover);
-  }
+}
 
-  .search-form .form-control {
-    padding-right: 40px; 
-  }
-  input.form-control.me-2{
+.search-form .form-control {
+    padding-right: 40px;
+}
+
+input.form-control.me-2 {
     box-shadow: none;
-  }
+}
 
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     .search-form {
-      width: 80%;
+        width: 80%;
     }
-  }
+}
+
 /* search icon off canvas */
 
 /* banner section */
@@ -591,7 +594,8 @@ button:active {
     .feature-section-3>.shadow-lg>.card {
         margin-top: 10px;
     }
-    .col-lg-4>.feature-section-1>img{
+
+    .col-lg-4>.feature-section-1>img {
         height: 280px !important;
     }
 }
@@ -651,7 +655,20 @@ div#video-container {
         width: 100%;
     }
 
+    .video-section>.container>.row.justify-content-center>.section-heading>h2 {
+        font-size: 35px !important;
+    }
 
+    .video-play-button {
+        top: 60% !important;
+    }
+
+}
+
+@media (min-width:768px) and (max-width: 884px) {
+    .video-section-outer {
+        height: 600px;
+    }
 }
 
 
@@ -1146,7 +1163,8 @@ div#myTabContent {
     display: inline-block;
     margin-top: 25px;
 }
-.properties-section>.container>.row>.col-lg-4.col-md-6>.card>.card-detail>h6{
+
+.properties-section>.container>.row>.col-lg-4.col-md-6>.card>.card-detail>h6 {
     color: var(--property-item-color);
     font-size: 20px;
     margin-top: 6px;
@@ -1632,6 +1650,7 @@ footer>.container>.copyright>p.text-center>a {
     background-color: var(--whatsapp-hover-color);
 
 }
-.whatsapp-icon>a:hover{
+
+.whatsapp-icon>a:hover {
     color: var(--text-white-color);
 }
